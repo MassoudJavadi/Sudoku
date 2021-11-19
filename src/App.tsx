@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Card, Content, Grid, NewButton, Numbers, Title } from './components'
 
 

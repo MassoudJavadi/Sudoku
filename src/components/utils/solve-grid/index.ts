@@ -12,7 +12,10 @@ function solveGrid(grid: GRID) {
   let row = 0
   let col = 0
 
+  
+
   for (let i = 0; i < 81; i++) {
+    
     row = Math.floor(i / 9)
     col = i % 9
 
@@ -25,6 +28,7 @@ function solveGrid(grid: GRID) {
               grid[row][col] = value
               if (checkGrid(grid)) {
                 global.counter++
+                
                 break
               } else if (solveGrid(grid)) return true
             }
